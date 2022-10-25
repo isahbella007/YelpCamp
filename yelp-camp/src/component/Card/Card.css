@@ -1,0 +1,39 @@
+.cardContainer{ 
+    height: fit-content; /* was set to 250px */
+    width: 300px;
+    background-color: red;
+    padding: 1rem;
+    border: 1px solid black;
+}
+.cardImage{ 
+    height: 120px;
+    margin-bottom: 0.5rem;
+}
+.cardImage > img{ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.cardName{ 
+    margin-bottom: 0.5rem;
+    font-family: var(--bodyFont);
+    font-weight: 700;
+}
+.cardDescription{ 
+    font-family: var(--bodyFont);
+    margin-bottom: 0.5rem;
+}
+.cardButton{ 
+    background-color: white;
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.cardButton > p{ 
+    color: black;
+    margin: auto;
+    font-weight: 700;
+}

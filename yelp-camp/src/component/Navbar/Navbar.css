@@ -1,0 +1,25 @@
+.header-items{ 
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* margin-left: 3rem; */
+}
+.header-image-container{ 
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+a{ 
+    text-decoration: none;
+    font-family: var(--bodyFont);
+    color: black;
+}
+nav{ 
+    /* display: flex; */
+    right: 0;
+    background-color: red;
+}
+.mobile-nav{ 
+    display: none;
+}

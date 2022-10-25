@@ -1,0 +1,133 @@
+.main{ 
+    height: 100vh;
+    width: 100vw;
+}
+.mobile-image-header{ 
+    width: 100%;
+    display: none;
+    /* background-color: purple; */
+}
+.mobile-image-container{ 
+    padding: 1rem;
+    /* margin: 0.2rem; */
+}
+.mainSection{ 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    /* flex-direction: column; */
+}
+.imageSection{ 
+    width: 50%;
+    height: 100%;
+    background-color: orange;
+    background-image: url("../../assets/HeroImageDesktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.textSection{ 
+    /* background-color: green; */
+    height: 100%;
+    width: 50%;
+}
+.texts{ 
+    /* background-color: red; */
+    height: 100%;
+    width: 85%;
+    padding: 1rem;
+    margin-left: 5rem;
+}
+.desktop-logo{ 
+    margin-bottom: 5rem;
+}
+.explore{ 
+    font-size: 40px;
+    /* background-color: green; */
+    font-family: var(--bodyFont);
+    font-weight: bold;
+    width: 75%;
+    margin-bottom: 0.7rem;
+}
+.description{ 
+    /* background-color: purple; */
+    font-family: var(--bodyFont);
+    width: 75%;
+    line-height: 1.4rem;
+    margin-bottom: 1rem;
+}
+.keyPoints{ 
+    margin-bottom: 1.5rem;
+}
+.checkMark{ 
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.5rem;
+    font-family: var(--bodyFont);
+}
+.button{ 
+    height: 50px;
+    background-color: black;
+    display: flex;
+    border-radius: 0.4rem;
+    width: 35%;
+    justify-content: center;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+.button > p{ 
+    text-align: center;
+    color: white;
+    margin: auto;
+    font-family: var(--bodyFont);
+
+}
+.partner{ 
+    font-family: var(--bodyFont);
+}
+.partnered{ 
+    display: flex;
+    gap: 10px;
+}
+
+@media only screen and (max-width:1023px) {
+    .mobile-image-header{ 
+        display: block;
+    }
+    .desktop-logo{ 
+        display: none;
+    }
+    .mainSection{ 
+        flex-direction: column;
+    }
+    .imageSection{ 
+        width: 100%;
+        height: 30%;
+        background-image: url("../../assets/HeroImageTab.jpg");
+        object-fit: contain;
+    }
+    .textSection{ 
+        width: 100%;
+        height: 50%
+    }
+    .texts{ 
+        padding: 1rem;
+        margin: 0;
+
+        width: 100%;
+    }
+    .explore{ 
+
+        width: 100%;
+        font-size: 30px;
+    }
+    .description{ 
+
+        width: 100%;
+    }
+    .partnered{ 
+        background-color: red;
+    }
+
+}
